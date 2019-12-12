@@ -32,6 +32,12 @@ uint16_t tFull0=0, tFull1=0, tFull2=0;
 /* variable digitalRaw	*/
 uint8_t digital;
 
+/* variable autocalibrate	*/
+uint8_t autoCal;
+
+/* variable calibrateall	*/
+uint8_t allCal;
+
 uint8_t debounce=0xFF;
 
 enum state{analogRaw, digitalRaw, calibrateAll, calibrateS0, calibrateS1, calibrateS2, calibrateAuto, decision, }myState;
@@ -105,6 +111,7 @@ int main(void) {
 
 		case calibrateAll:{
 			USART_PutStr("calibrateAll: ");
+			print_calibrateAll();
 			USART_PutStr("\n");
 			if(buttonPressed())
 				myState = calibrateAuto;
@@ -112,6 +119,7 @@ int main(void) {
 
 		case calibrateAuto:{
 			USART_PutStr("calibrateAuto: ");
+			print_calibrateAuto();
 			USART_PutStr("\n");
 			if(buttonPressed())
 				myState = decision;
@@ -208,10 +216,14 @@ void print_calibrateS2(void){
 	USART_PutNum(tHigh2); USART_PutStr("^"); USART_PutNum(tLow2); USART_PutStr("^"); USART_PutNum(tFull2);
 }
 void print_calibrateAll(void){
-
+	allCal = SPI_MasterTransmit(0x0D);
+	_delay_us(500);
+	USART_PutChar(allCal);
 }
 void print_calibrateAuto(void){
-
+	autoCal = SPI_MasterTransmit(0x0E);
+	_delay_us(500);
+	USART_PutChar(autoCal);
 }
 void print_decision(void){
 	digital = SPI_MasterTransmit(0x10);

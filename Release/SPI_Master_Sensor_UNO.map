@@ -28,7 +28,9 @@ c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc
 Allocating common symbols
 Common symbol       size              file
 
+autoCal             0x1               ./main.o
 myState             0x1               ./main.o
+allCal              0x1               ./main.o
 digital             0x1               ./main.o
 
 Memory Configuration
@@ -154,7 +156,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000      0xbbc
+.text           0x0000000000000000      0xbfc
  *(.vectors)
  .vectors       0x0000000000000000       0x68 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5/crtatmega328p.o
                 0x0000000000000000                __vector_default
@@ -294,124 +296,124 @@ END GROUP
                 0x0000000000000404       0x7c ./main.o
                 0x0000000000000404                print_calibrateS2
  .text.print_calibrateAll
-                0x0000000000000480        0x2 ./main.o
+                0x0000000000000480       0x1e ./main.o
                 0x0000000000000480                print_calibrateAll
  .text.print_calibrateAuto
-                0x0000000000000482        0x2 ./main.o
-                0x0000000000000482                print_calibrateAuto
+                0x000000000000049e       0x1e ./main.o
+                0x000000000000049e                print_calibrateAuto
  .text.print_decision
-                0x0000000000000484       0x1e ./main.o
-                0x0000000000000484                print_decision
+                0x00000000000004bc       0x1e ./main.o
+                0x00000000000004bc                print_decision
  .text.buttonPressed
-                0x00000000000004a2       0x20 ./main.o
-                0x00000000000004a2                buttonPressed
+                0x00000000000004da       0x20 ./main.o
+                0x00000000000004da                buttonPressed
  .text.startup.main
-                0x00000000000004c2      0x148 ./main.o
-                0x00000000000004c2                main
+                0x00000000000004fa      0x150 ./main.o
+                0x00000000000004fa                main
  .text.libgcc.mul
-                0x000000000000060a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
+                0x000000000000064a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.div
-                0x000000000000060a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x000000000000060a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
+                0x000000000000064a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000000000000064a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x000000000000060a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
+                0x000000000000064a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x000000000000060a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
+                0x000000000000064a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x000000000000060a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
+                0x000000000000064a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.fixed
-                0x000000000000060a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
+                0x000000000000064a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x000000000000060a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x000000000000064a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
  .text.libgcc.div
-                0x000000000000060a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
- .text.libgcc   0x000000000000060a        0xc c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
-                0x000000000000060a                __tablejump2__
+                0x000000000000064a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc   0x000000000000064a        0xc c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x000000000000064a                __tablejump2__
  .text.libgcc.prologue
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
  .text.libgcc.builtins
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
  .text.libgcc.fmul
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
  .text.libgcc.fixed
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_tablejump2.o)
  .text.libgcc.mul
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.div
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.prologue
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.builtins
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.fmul
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.fixed
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_copy_data.o)
  .text.libgcc.mul
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.prologue
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fixed
-                0x0000000000000616        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000000000000656        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_clear_bss.o)
  .text.avr-libc
-                0x0000000000000616       0x46 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
-                0x0000000000000616                sprintf
+                0x0000000000000656       0x46 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                0x0000000000000656                sprintf
  .text.avr-libc
-                0x000000000000065c      0x396 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
-                0x000000000000065c                vfprintf
+                0x000000000000069c      0x396 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x000000000000069c                vfprintf
  .text.avr-libc
-                0x00000000000009f2       0x16 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
-                0x00000000000009f2                strnlen_P
+                0x0000000000000a32       0x16 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x0000000000000a32                strnlen_P
  .text.avr-libc
-                0x0000000000000a08       0x16 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
-                0x0000000000000a08                strnlen
+                0x0000000000000a48       0x16 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x0000000000000a48                strnlen
  .text.avr-libc
-                0x0000000000000a1e       0x60 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
-                0x0000000000000a1e                fputc
+                0x0000000000000a5e       0x60 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x0000000000000a5e                fputc
  .text.avr-libc
-                0x0000000000000a7e       0xbc c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
-                0x0000000000000a7e                __ultoa_invert
+                0x0000000000000abe       0xbc c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x0000000000000abe                __ultoa_invert
  .text.libgcc.mul
-                0x0000000000000b3a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
+                0x0000000000000b7a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
  .text.libgcc.div
-                0x0000000000000b3a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
- .text.libgcc   0x0000000000000b3a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
+                0x0000000000000b7a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc   0x0000000000000b7a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
  .text.libgcc.prologue
-                0x0000000000000b3a       0x38 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
-                0x0000000000000b3a                __prologue_saves__
+                0x0000000000000b7a       0x38 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
+                0x0000000000000b7a                __prologue_saves__
  .text.libgcc.builtins
-                0x0000000000000b72        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
+                0x0000000000000bb2        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
  .text.libgcc.fmul
-                0x0000000000000b72        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
+                0x0000000000000bb2        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
  .text.libgcc.fixed
-                0x0000000000000b72        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
+                0x0000000000000bb2        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_prologue.o)
  .text.libgcc.mul
-                0x0000000000000b72        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
+                0x0000000000000bb2        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
  .text.libgcc.div
-                0x0000000000000b72        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
- .text.libgcc   0x0000000000000b72        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
+                0x0000000000000bb2        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc   0x0000000000000bb2        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
  .text.libgcc.prologue
-                0x0000000000000b72       0x36 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
-                0x0000000000000b72                __epilogue_restores__
+                0x0000000000000bb2       0x36 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
+                0x0000000000000bb2                __epilogue_restores__
  .text.libgcc.builtins
-                0x0000000000000ba8        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
+                0x0000000000000be8        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
  .text.libgcc.fmul
-                0x0000000000000ba8        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
+                0x0000000000000be8        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
  .text.libgcc.fixed
-                0x0000000000000ba8        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
-                0x0000000000000ba8                . = ALIGN (0x2)
+                0x0000000000000be8        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_epilogue.o)
+                0x0000000000000be8                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000000000000ba8        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
-                0x0000000000000ba8                _exit
-                0x0000000000000ba8                exit
+ .fini9         0x0000000000000be8        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
+                0x0000000000000be8                _exit
+                0x0000000000000be8                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -430,19 +432,19 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000000000000ba8        0x4 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x0000000000000be8        0x4 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
  *(.hightext)
  *(.hightext*)
  *(.progmemx.*)
-                0x0000000000000bac                . = ALIGN (0x2)
+                0x0000000000000bec                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  .jumptables.gcc.main
-                0x0000000000000bac       0x10 ./main.o
-                0x0000000000000bbc                _etext = .
+                0x0000000000000bec       0x10 ./main.o
+                0x0000000000000bfc                _etext = .
 
-.data           0x0000000000800100       0x7a load address 0x0000000000000bbc
+.data           0x0000000000800100       0x7a load address 0x0000000000000bfc
                 0x0000000000800100                PROVIDE (__data_start = .)
  *(.data)
  .data          0x0000000000800100        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5/crtatmega328p.o
@@ -480,7 +482,7 @@ END GROUP
                 0x000000000080017a                _edata = .
                 0x000000000080017a                PROVIDE (__data_end = .)
 
-.bss            0x000000000080017a       0x1a
+.bss            0x000000000080017a       0x1c
                 0x000000000080017a                PROVIDE (__bss_start = .)
  *(.bss)
  .bss           0x000000000080017a        0x0 c:/users/andi/eclipse/cpp-2018-12/eclipse/avr-gcc-8.3.0-x64-mingw/bin/../lib/gcc/avr/8.3.0/../../../../avr/lib/avr5/crtatmega328p.o
@@ -537,18 +539,20 @@ END GROUP
  .bss.sHigh0    0x0000000000800191        0x1 ./main.o
                 0x0000000000800191                sHigh0
  *(COMMON)
- COMMON         0x0000000000800192        0x2 ./main.o
-                0x0000000000800192                myState
-                0x0000000000800193                digital
-                0x0000000000800194                PROVIDE (__bss_end = .)
-                0x0000000000000bbc                __data_load_start = LOADADDR (.data)
-                0x0000000000000c36                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x0000000000800192        0x4 ./main.o
+                0x0000000000800192                autoCal
+                0x0000000000800193                myState
+                0x0000000000800194                allCal
+                0x0000000000800195                digital
+                0x0000000000800196                PROVIDE (__bss_end = .)
+                0x0000000000000bfc                __data_load_start = LOADADDR (.data)
+                0x0000000000000c76                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0000000000800194        0x0
+.noinit         0x0000000000800196        0x0
                 [!provide]                        PROVIDE (__noinit_start = .)
  *(.noinit*)
                 [!provide]                        PROVIDE (__noinit_end = .)
-                0x0000000000800194                _end = .
+                0x0000000000800196                _end = .
                 [!provide]                        PROVIDE (__heap_start = .)
 
 .eeprom         0x0000000000810000        0x0
